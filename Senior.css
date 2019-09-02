@@ -1,0 +1,204 @@
+@charset "UTF-8"
+
+/*Dictates style for h1 elements*/
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-style: bold;
+  color: black;
+  margin-top: 25px;
+}
+.title h1 {
+  text-align: center;
+  font-size: 40px;
+  font-style: bold;
+  color: black;
+  margin-top: 10%;
+}
+/*Dictates style for h2 elements*/
+h2{
+  font-size: 20px;
+  font-style: bold;
+  color: black;
+}
+/*Dictates style for p elements*/
+p {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.blurb {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+  margin-top: 4%;
+}
+
+button {
+  font-size: 44px;
+}
+/* NAVIGATION BAR: */
+/* Add a background color to the top navigation */
+nav {
+  background-color: red;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Style of the links inside the navigation bar */
+nav a {
+  float: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: black;
+  font-size: 30px;
+  width: 25%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Changes the color of links when the mouse hovers over them */
+nav a:hover {
+  background-color: white;
+  color: #E7DFDD;
+}
+
+/* Adds a color to the active/current link */
+nav a.active {
+  background-color: #e8491d;
+  color: white;
+}
+
+/*sets the navigation into a grid. This makes it easier to get even spacing between buttons*/
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+/*Specifications for the size colour and placement of the "Enquire Now" button*/
+.enquirebutton {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: red;
+  color: #FFF;
+  margin-left: 45%;
+  padding: 10px;
+  font-size: 15px;
+}
+/*All of the information on the webpages pages are stored here in the same format as to provide consistency*/
+
+.Drama a{
+  margin-left: auto;
+}
+
+.Dance a{
+  margin-left: auto
+}
+
+.Music a{
+  margin-left: auto
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+  margin: 0%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.links {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+/*---This is for the three image links to each of the Performing Arts sections-*/
+.grid-container {
+  display: grid;
+  grid-template: 350px / auto auto auto;
+  grid-gap: 10%;
+  background-color: black; /*-------------------Change this to the background colour when done------------------*/
+  padding-left: 20%;
+  padding-right: 20%;
+  width: center;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/*-------------------------------------*/
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 16px 32px;
+}
+/*-------------------------------------*/
